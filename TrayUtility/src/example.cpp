@@ -5,10 +5,6 @@
 int main()
 {
 	auto tray = new SystemTray();
-	tray->Test([](const char* text, int value)
-	{
-		printf("%s %d\n", text, value);
-	});
 
 	delete(tray);
 }
