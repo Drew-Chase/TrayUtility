@@ -7,20 +7,25 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrayUtility", "TrayUtility\
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Dynamic Library|x64 = Dynamic Library|x64
+		Dynamic Library|x86 = Dynamic Library|x86
+		Example|x64 = Example|x64
+		Example|x86 = Example|x86
+		Static Library|x64 = Static Library|x64
+		Static Library|x86 = Static Library|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Debug|x64.ActiveCfg = Debug|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Debug|x64.Build.0 = Debug|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Debug|x86.ActiveCfg = Debug|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Debug|x86.Build.0 = Debug|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Release|x64.ActiveCfg = Release|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Release|x64.Build.0 = Release|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Release|x86.ActiveCfg = Release|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Release|x86.Build.0 = Release|Win32
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x64.ActiveCfg = Dynamic Library|x64
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x64.Build.0 = Dynamic Library|x64
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x86.ActiveCfg = Dynamic Library|Win32
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x86.Build.0 = Dynamic Library|Win32
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Example|x64.ActiveCfg = Example|x64
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Example|x64.Build.0 = Example|x64
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Example|x86.ActiveCfg = Dynamic Library|Win32
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x64.ActiveCfg = Static Library|x64
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x64.Build.0 = Static Library|x64
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x86.ActiveCfg = Static Library|Win32
+		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x86.Build.0 = Static Library|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
