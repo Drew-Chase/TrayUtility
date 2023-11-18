@@ -31,8 +31,13 @@
     <ClCompile Include="src\SystemTray.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="includes\MenuItem.h" />
     <ClInclude Include="includes\MouseButton.h" />
     <ClInclude Include="includes\SystemTray.h" />
+    <ClInclude Include="includes\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TrayUtility.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
