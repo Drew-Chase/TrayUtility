@@ -3,9 +3,5 @@
 enum MouseButton
 {
 	Left,
-	Right,
-	Middle,
-	Left_Double_Click,
-	Right_Double_Click,
-	Middle_Double_Click,
+	Right
 };
