@@ -130,6 +130,7 @@ tray->OpenContextMenu();
 // LFInteractive LLC. (c) 2020-2024 All Rights Reserved
 #include "SystemTray.h"
 #include "resource.h"
+using namespace TrayUtility;
 
 SystemTray* tray;
 

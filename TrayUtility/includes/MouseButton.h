@@ -1,7 +1,10 @@
 // LFInteractive LLC. (c) 2020-2024 All Rights Reserved
 #pragma once
-enum MouseButton
+namespace TrayUtility
 {
-	Left,
-	Right
-};
+	enum MouseButton
+	{
+		Left,
+		Right
+	};
+}

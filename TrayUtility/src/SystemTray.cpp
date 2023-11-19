@@ -2,12 +2,12 @@
 #include "SystemTray.h"
 #include <string>
 
-void SystemTray::UpdateShellIcon()
+void TrayUtility::SystemTray::UpdateShellIcon()
 {
 	Shell_NotifyIconW(NIM_MODIFY, &nid);
 }
 
-SystemTray::SystemTray()
+TrayUtility::SystemTray::SystemTray()
 {
 	this->nid = { 0 };
 	this->hIcon = nullptr;
@@ -15,14 +15,14 @@ SystemTray::SystemTray()
 	this->on_click_callback = nullptr;
 }
 
-SystemTray::~SystemTray()
+TrayUtility::SystemTray::~SystemTray()
 {
 	if (!this->menu_items.empty())
 	{
 		this->menu_items.clear();
 	}
 }
-bool SystemTray::Create(const wchar_t* label, const wchar_t* unique_class_name, IconInteractionCallback on_click)
+bool TrayUtility::SystemTray::Create(const wchar_t* label, const wchar_t* unique_class_name, IconInteractionCallback on_click)
 {
 	this->on_click_callback = on_click;
 
@@ -137,13 +137,13 @@ bool SystemTray::Create(const wchar_t* label, const wchar_t* unique_class_name, 
 	return true;
 }
 
-void SystemTray::AddMenuItem(MenuItem* item)
+void TrayUtility::SystemTray::AddMenuItem(MenuItem* item)
 {
 	item->comandID = this->menu_items.size() + 1;
 	this->menu_items.push_back(item);
 }
 
-void SystemTray::AddMenuItem(const wchar_t* label, MenuItemClickCallback on_click_callback)
+void TrayUtility::SystemTray::AddMenuItem(const wchar_t* label, MenuItemClickCallback on_click_callback)
 {
 	auto item = new MenuItem();
 	item->label = label;
@@ -152,7 +152,7 @@ void SystemTray::AddMenuItem(const wchar_t* label, MenuItemClickCallback on_clic
 	this->AddMenuItem(item);
 }
 
-void SystemTray::RemoveMenuItem(MenuItem* item)
+void TrayUtility::SystemTray::RemoveMenuItem(MenuItem* item)
 {
 	int index = 0;
 	for (auto i : this->menu_items)
@@ -167,14 +167,14 @@ void SystemTray::RemoveMenuItem(MenuItem* item)
 	}
 }
 
-void SystemTray::RemoveMenuItem(unsigned int index)
+void TrayUtility::SystemTray::RemoveMenuItem(unsigned int index)
 {
 	MenuItem* item = this->menu_items.at(index);
 	this->menu_items.erase(this->menu_items.begin() + index);
 	delete(item);
 }
 
-bool SystemTray::SetIcon(HICON icon)
+bool TrayUtility::SystemTray::SetIcon(HICON icon)
 {
 	// Release the existing icon if it was loaded
 	if (hIcon)
@@ -192,7 +192,7 @@ bool SystemTray::SetIcon(HICON icon)
 	return icon != nullptr;
 }
 
-bool SystemTray::SetIcon(const wchar_t* icon_path)
+bool TrayUtility::SystemTray::SetIcon(const wchar_t* icon_path)
 {
 	// Load the icon from the file
 	HICON icon = (HICON)LoadImageW(nullptr, icon_path, IMAGE_ICON, 0, 0, LR_LOADFROMFILE | LR_DEFAULTSIZE | LR_SHARED);
@@ -208,25 +208,25 @@ bool SystemTray::SetIcon(const wchar_t* icon_path)
 	return SetIcon(icon);
 }
 
-bool SystemTray::SetIcon(LPWSTR icon_resource)
+bool TrayUtility::SystemTray::SetIcon(LPWSTR icon_resource)
 {
 	HICON icon = LoadIconW(GetModuleHandle(NULL), icon_resource);
 	return SetIcon(icon);
 }
 
-void SystemTray::SetTooltip(const wchar_t* tooltip)
+void TrayUtility::SystemTray::SetTooltip(const wchar_t* tooltip)
 {
 	wcscpy_s(this->nid.szTip, const_cast<wchar_t*>(tooltip));
 	this->UpdateShellIcon();
 }
 
-void SystemTray::SetTooltip(wchar_t* tooltip)
+void TrayUtility::SystemTray::SetTooltip(wchar_t* tooltip)
 {
 	wcscpy_s(this->nid.szTip, const_cast<wchar_t*>(tooltip));
 	this->UpdateShellIcon();
 }
 
-void SystemTray::OpenContextMenu()
+void TrayUtility::SystemTray::OpenContextMenu()
 {
 	POINT pt;
 	GetCursorPos(&pt);
