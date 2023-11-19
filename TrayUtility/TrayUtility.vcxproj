@@ -34,7 +34,7 @@
     <ClInclude Include="includes\MenuItem.h" />
     <ClInclude Include="includes\MouseButton.h" />
     <ClInclude Include="includes\SystemTray.h" />
-    <ClInclude Include="includes\resource.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TrayUtility.rc" />
