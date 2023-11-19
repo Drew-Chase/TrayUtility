@@ -16,8 +16,14 @@ A C++ simple library that allows you to create system tray icons for windows.
 
 ## Create Tray Icon
 
-First initialize the `SystemTray` object.
 
+### Namespace
+
+```c++
+using namespace TrayUtility;
+```
+
+First initialize the `SystemTray` object.
 ```c++
 #include "SystemTray.h"
 SystemTray* tray;
