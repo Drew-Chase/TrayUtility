@@ -1,6 +1,7 @@
 // LFInteractive LLC. (c) 2020-2024 All Rights Reserved
 #include "SystemTray.h"
-#include "resource.h"
+#include "../resource.h"
+using namespace TrayUtility;
 
 SystemTray* tray;
 
@@ -33,7 +34,6 @@ int main()
 
 	tray->SetTooltip(L"Test");
 	tray->SetIcon(L"icon.ico");
-	tray->SetIcon(LoadIconW(GetModuleHandleW(NULL), MAKEINTRESOURCE(APPICON)));
 	tray->SetIcon(MAKEINTRESOURCE(APPICON));
 
 	if (success)
