@@ -1,36 +1,38 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34309.116
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrayUtility", "TrayUtility\TrayUtility.vcxproj", "{B46E03A4-9C77-4A33-98DE-75512C1C2213}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrayUtility", "TrayUtility\TrayUtility.vcxproj", "{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dynamic Library|Win32 = Dynamic Library|Win32
 		Dynamic Library|x64 = Dynamic Library|x64
-		Dynamic Library|x86 = Dynamic Library|x86
+		Example|Win32 = Example|Win32
 		Example|x64 = Example|x64
-		Example|x86 = Example|x86
+		Static Library Debug|Win32 = Static Library Debug|Win32
+		Static Library Debug|x64 = Static Library Debug|x64
+		Static Library|Win32 = Static Library|Win32
 		Static Library|x64 = Static Library|x64
-		Static Library|x86 = Static Library|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x64.ActiveCfg = Dynamic Library|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x64.Build.0 = Dynamic Library|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x86.ActiveCfg = Dynamic Library|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Dynamic Library|x86.Build.0 = Dynamic Library|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Example|x64.ActiveCfg = Example|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Example|x64.Build.0 = Example|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Example|x86.ActiveCfg = Dynamic Library|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x64.ActiveCfg = Static Library|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x64.Build.0 = Static Library|x64
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x86.ActiveCfg = Static Library|Win32
-		{B46E03A4-9C77-4A33-98DE-75512C1C2213}.Static Library|x86.Build.0 = Static Library|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Dynamic Library|Win32.ActiveCfg = Dynamic Library|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Dynamic Library|Win32.Build.0 = Dynamic Library|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Dynamic Library|x64.ActiveCfg = Dynamic Library|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Dynamic Library|x64.Build.0 = Dynamic Library|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Example|Win32.ActiveCfg = Example|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Example|Win32.Build.0 = Example|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Example|x64.ActiveCfg = Example|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Example|x64.Build.0 = Example|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library Debug|Win32.ActiveCfg = Static Library Debug|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library Debug|Win32.Build.0 = Static Library Debug|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library Debug|x64.ActiveCfg = Static Library Debug|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library Debug|x64.Build.0 = Static Library Debug|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library|Win32.ActiveCfg = Static Library|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library|Win32.Build.0 = Static Library|Win32
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library|x64.ActiveCfg = Static Library|x64
+		{99FA23EE-05B0-9CE3-8EA4-96BAFA5893E7}.Static Library|x64.Build.0 = Static Library|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C37F86B1-4230-4DEA-9524-45BA76EA7027}
 	EndGlobalSection
 EndGlobal
