@@ -18,20 +18,10 @@
     <ClInclude Include="includes\SystemTray.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SystemTray.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\example.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="TrayUtility.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="icon.ico" />
   </ItemGroup>
 </Project>
